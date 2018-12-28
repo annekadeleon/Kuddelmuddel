@@ -1,4 +1,4 @@
-#2D array of German words with English translation
+//2D array of German words with English translation
 words = [16]
 words[0] = "Mann" : "Man"
 words[1] = "Mädchen" : "Girl"
@@ -16,3 +16,10 @@ words[12] = "du" : "you"
 words[13] = "bist" : "are"
 words[14] = "ist" : "is"
 words[15] = "bin" : "am"
+
+score = 0
+count = 0
+
+WHILE count != words.length * 2 DO
+  OUTPUT words[count] + "Translation: "
+  INPUT translation
