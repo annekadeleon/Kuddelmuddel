@@ -1,25 +1,39 @@
 //2D array of German words with English translation
-words = [16]
-words[0] = "Mann" : "Man"
-words[1] = "Mädchen" : "Girl"
-words[2] = "Frau" : "Woman"
-words[3] = "Junge" : "Boy"
-words[4] = "Brot" : "Bread"
-words[5] = "Wasser" : "Water"
-words[6] = "er" : "he"
-words[7] = "sie" : "she"
-words[8] = "es" : "it"
-words[9] = "und" : "and"
-words[10] = "Kind" : "Child"
-words[11] = "ich" : "I"
-words[12] = "du" : "you"
-words[13] = "bist" : "are"
-words[14] = "ist" : "is"
-words[15] = "bin" : "am"
+words = [
+["Mann" : "Man"],
+["Mädchen" : "Girl"],
+["Frau" : "Woman"],
+["Junge" : "Boy"],
+["Brot" : "Bread"],
+["Wasser" : "Water"],
+["er" : "he"],
+["sie" : "she"],
+["es" : "it"],
+["und" : "and"],
+["Kind" : "Child"],
+["ich" : "I"],
+["du" : "you"],
+["bist" : "are"],
+["ist" : "is"],
+["bin" : "am"]
+]
 
 score = 0
 count = 0
 
+//Loops length of array twice
 WHILE count != words.length * 2 DO
-  OUTPUT words[count] + "Translation: "
+
+  //Gets random number between 0 and length of array which
+  //determines which word to translate
+  key = words[random(0, words.length)]
+  OUTPUT "Translate " + key[0]
   INPUT translation
+  IF translation == key[1]
+    THEN
+      score = score + 1
+      OUTPUT "Well done!"
+    ELSE
+      OUTPUT "Try again."
+  OUTPUT score
+  count = count + 1
