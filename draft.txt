@@ -35,5 +35,5 @@ WHILE count != words.length * 2 DO
       OUTPUT "Well done!"
     ELSE
       OUTPUT "Try again."
-  OUTPUT score
-  count = count + 1
+OUTPUT score
+count = count + 1
