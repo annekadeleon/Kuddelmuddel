@@ -34,6 +34,10 @@ WHILE count != words.length * 2 DO
       score = score + 1
       OUTPUT "Well done!"
     ELSE
+    WHILE translation != key[1] DO
       OUTPUT "Try again."
-OUTPUT score
-count = count + 1
+      OUTPUT "Translate " + key[0]
+      INPUT translation
+  count = count + 1
+
+OUTPUT "Score: " + score + "out of " + words.length * 2
