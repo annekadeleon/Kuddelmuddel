@@ -1,0 +1,16 @@
+Mann,man
+Mädchen,girl
+Frau,woman
+Junge,boy
+Brot,bread
+Wasser,water
+er,he
+sie,she
+es,it
+und,and
+Kind,child
+ich,I
+du,you
+bist,are
+ist,is
+bin,am
